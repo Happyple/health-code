@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>钟毅与健康码的故事</title>
+    <link rel="stylesheet" href="css/zhongyi.css" type="text/css">
+</head>
+<body>
+    <div class="title1">
+        <img src="./images/zhongyititle.png" alt="标题" width="900px" height="120px"> 
+     </div>
+    <div id="wrap">
+        <!--<div class="num"></div>-->
+        <ul>
+            <li class="on"><img src="images/zycaifang.png" alt=""></li>
+            <li><img src="images/zhongyi.png" alt=""></li>
+            <li><img src="images/zycaifang.png" alt=""></li>
+            <li><img src="images/zycaifang.png" alt=""></li>
+            <li><img src="images/zycaifang.png" alt=""></li>
+            <li><img src="images/zycaifang.png" alt=""></li>
+            <li><img src="images/zycaifang.png" alt=""></li>
+            <li><img src="images/zycaifang.png" alt=""></li>
+            <li><img src="images/zycaifang.png" alt=""></li>
+        </ul>
+        <div class="btn">
+            <span class="left"> &lt; </span>
+            <span class="right"> &gt; </span>
+        </div>
+    </div>
+    <script>
+        let aLi = document.getElementsByTagName("li"),
+            aSpan = document.getElementsByTagName("span"),
+            oTitle = document.getElementsByClassName("title")[0],
+            oI = document.getElementsByTagName("i")[0],
+            length = aLi.length,
+            i = 0;
+        aSpan[1].onclick = function(){
+            aLi[i].className = "";
+            i++;
+            if(i>=length){
+                i = 0;
+            }
+            aLi[i].className = "on";
+        }
+        aSpan[0].onclick = function(){
+            aLi[i].className = "";
+            i--;
+            if(i<0){
+                i = length-1;
+            }
+            aLi[i].className = "on";
+        }
+    </script>
+<div class="return">
+    <a href="map.html">
+        <img src="./images/return.png" width="130px" height="95px">
+    </a>
+</div>
+    
+</body>
+</html>

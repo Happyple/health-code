@@ -1,0 +1,90 @@
+@charset 'utf-8';
+*{
+    margin: 0;
+    padding: 0;
+}
+li{
+	list-style: none;
+}
+i{
+	font-style: normal;
+}
+body{
+    background-image: url(../images/index.png);
+    background-repeat: no-repeat;
+    background-position: center bottom ;
+	text-align:center;
+    width: 100vw;
+    height: 100vh;
+}
+.title1{
+    height: 40px;
+	width: 80px;
+	background-color:transparent;
+	text-align: center;
+	position:absolute;
+	top: 8%;
+	left: 20%;
+	opacity: 1;/*标题透明度*/
+	/*animation: move 3s infinite;*/
+
+}
+.return {
+	height: 50px;
+	width: 100px;
+	background-color:transparent;
+	position:absolute;
+	top: 88%;
+	left: 90%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+}
+.map{
+	width: 900px;
+	margin:auto;
+	clear:left;
+}
+.qcontainer{
+	-webkit-perspective:400;
+	-moz-perspective:400;
+	float:left;
+	width:33.3%;
+	margin-top: 30%;
+}
+.film{
+	width:75%;
+	height:300px;
+	-webkit-transform-style:preserve-3d;
+	-webkit-transition:1.5s;
+	-moz-transform-style:preserve-3d;
+	-moz-transition:1.5s;
+}
+.qcontainer:hover .film{
+	-webkit-transform:rotateY(180deg);
+	-moz-transform:rotateY(180deg);
+}
+.face{
+	height: 200px;
+	width: 200px;
+	position:absolute;
+	-webkit-backface-visibility:hidden;
+	-moz-backface-visibility:hidden;
+}
+.face a{
+	/*消除超链接下划线*/
+	text-decoration: none;
+}
+.face h3{
+	color:white;
+	line-height:150px;
+	text-align:center;
+}
+.back{
+	-webkit-transform:rotateY(180deg);
+	-moz-transform:rotateY(180deg);
+	background: -webkit-gradient(linear,left top,left bottom,from(#7fc2d3),to(#49679d));
+	background:-moz-linear-gradient(top,#7fc2d3,#49679d);
+	/*根据正面图片大小调整背面*/
+	width:200px;
+	height:200px;
+}

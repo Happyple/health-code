@@ -1,0 +1,226 @@
+@charset 'utf-8';
+*{
+    margin: 0;
+    padding: 0;
+}
+li{
+	list-style: none;
+}
+i{
+	font-style: normal;
+}
+body{
+    background-image: url(../images/index.png);
+    background-repeat: no-repeat;
+    background-position: center bottom ;
+    width: 100vw;
+    height: 100vh;
+}
+.title1{
+    height: 40px;
+	width: 100px;
+	background-color:transparent;
+	text-align: center;
+	position:absolute;
+	top: 8%;
+	left: 30%;
+	opacity: 1;/*标题透明度*/
+	/*animation: move 3s infinite;*/
+
+}
+#xx{
+	height: 50px;
+	width: 100px;
+    position:absolute;
+    top: 8%;
+	left: 15%;
+}
+.snowDown {
+    animation: snowDown 2s linear infinite running;
+    -webkit-animation: snowDown 2s linear infinite running;
+    display: none;
+}
+#xx:hover .snowDown{
+    display: block;
+}
+@keyframes snowDown {
+    0%{
+		transform: translateY(0px);	
+	}
+	100%{
+		transform: translateY(100px);
+	}
+}
+/*@keyframes move {
+	0%{
+		transform: translateX(0px);
+	}
+	25%{
+		transform: translateX(100px);
+	}
+	50%{
+		transform: translateX(0px);
+	}
+	100%{
+		transform: translateX(-100px);
+	}
+	
+}
+/*左右移动动画*/
+/*道路动画*/
+.daolu{
+    height: 50px;
+	width: 100px;
+	border-radius: 5px;
+	background-color:transparent;
+	text-align: center;
+	position:absolute;
+	top: 60%;
+	left: 18%;
+}
+.che{
+    height: 50px;
+	width: 100px;
+	background-color:transparent;
+	position:absolute;
+	top: 58%;
+	left: 11%;
+	animation: move 8s infinite;
+}
+@keyframes move {
+	0%{
+		transform: translateX(0px);	
+	}
+	100%{
+		transform: translateX(1020px);
+	}
+}
+.che:hover{
+	animation-play-state: paused;
+}
+/*钟毅*/
+.zhongyi{
+    height: 50px;
+	width: 100px;
+	background-color:transparent;
+	position:relative;
+	top: 38%;
+	left: 7%;
+}
+.zy{
+	position:absolute;
+	opacity: 1;
+	transition: opacity 1s ease-in-out;
+}
+.zhongyi .text{
+	height: 50px;
+	width: 100px;
+	background-color:transparent;
+	text-align: center;
+	position:absolute;
+	opacity: 0;
+	transition: opacity 1s ease-in-out;
+}
+.zhongyi:hover .zy{
+	opacity: 0;
+}
+.zhongyi:hover .text{
+	opacity: 1;
+}
+/*企业*/
+.qiyejishu{
+    height: 50px;
+	width: 100px;
+	background-color:transparent;
+	position:absolute;
+	top: 39%;
+	left: 30%;
+}
+.qyjs{
+	position: absolute;
+	opacity: 1;
+	transition: opacity 1s ease-in-out;
+}
+.qiyejishu .text{
+	height: 50px;
+	width: 100px;
+	background-color:transparent;
+	text-align: center;
+	position:absolute;
+	opacity: 0;
+	transition: opacity 1s ease-in-out;
+}
+.qiyejishu:hover .qyjs{
+	opacity: 0;
+}
+.qiyejishu:hover .text{
+	opacity: 1;
+}
+/*政府*/
+.zhengfu{
+    height: 50px;
+	width: 100px;
+	background-color:transparent;
+	position:relative;
+	top: 32%;
+	left: 53.5%;
+}
+.zf{
+	position: absolute;
+	opacity: 1;
+	transition: opacity 1s ease-in-out;
+}
+.zhengfu .text{
+	height: 50px;
+	width: 100px;
+	background-color:transparent;
+	text-align: center;
+	position:absolute;
+	opacity: 0;
+	transition: opacity 1s ease-in-out;
+}
+.zhengfu:hover .zf{
+	opacity: 0;
+}
+.zhengfu:hover .text{
+	opacity: 1;
+}
+/*群众*/
+.people{
+    height: 50px;
+	width: 100px;
+	background-color:transparent;
+	position:absolute;
+	top: 38%;
+	left: 75%;
+}
+.qz{
+	position: absolute;
+	opacity: 1;
+	transition: opacity 1s ease-in-out;
+}
+.people .text{
+	height: 50px;
+	width: 100px;
+	background-color:transparent;
+	text-align: center;
+	position:absolute;
+	opacity: 0;
+	transition: opacity 1s ease-in-out;
+}
+.people:hover .qz{
+	opacity: 0;
+}
+.people:hover .text{
+	opacity: 1;
+}
+.return {
+	height: 50px;
+	width: 100px;
+	background-color:transparent;
+	position:absolute;
+	top: 88%;
+	left: 90%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+}

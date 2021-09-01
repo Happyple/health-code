@@ -1,0 +1,35 @@
+@charset 'utf-8';
+*{
+    margin: 0;
+    padding: 0;
+}
+li{
+	list-style: none;
+}
+i{
+	font-style: normal;
+}
+body{
+    background-image: url(../images/index.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    width: 100vw;
+    height: 100vh;
+}
+.jinru {
+	height: 50px;
+	width: 100px;
+	text-align: center;
+	position:absolute;
+	top: 30%;
+	left: 40%;
+}
+.jinru:hover img{
+	transition:transform .5s ease-out;
+			-o-transition:transform .5s ease-out;
+		   -webkit-transition:transform .5s ease-out;
+		   -moz-transition:transform .5s ease-out;
+		   transform: scale(1.1);
+		   -ms-transform: scale(1.1);
+		   -webkit-transform: scale(1.1);
+}
